@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------
+   Base styles
+-------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background-light text-foreground-light font-sans antialiased;
+}
+
+.dark body {
+  @apply bg-background-dark text-foreground-dark;
+}
+
+/* -------------------------
+   Typography system
+-------------------------- */
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold tracking-tight;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-xl text-muted-light;
+}
+
+.dark .section-subtitle {
+  @apply text-muted-dark;
+}
+
+/* -------------------------
+   UI primitives
+-------------------------- */
+
+.card {
+  @apply rounded-2xl border border-border-light bg-white p-6 shadow-sm;
+}
+
+.dark .card {
+  @apply border-border-dark bg-surface-dark;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-lg
+         bg-accent px-6 py-3 font-medium text-white
+         transition hover:opacity-90;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-lg
+         border border-border-light px-6 py-3 font-medium
+         transition hover:bg-surface-light;
+}
+
+.dark .button-secondary {
+  @apply border-border-dark hover:bg-surface-dark;
+}
