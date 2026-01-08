@@ -11,6 +11,7 @@ import ProofBar from "./sections/ProofBar";
 import Skills from "./sections/Skills";
 import ThemeToggle from "./components/ui/FloatingThemeToggle";
 import FloatingThemeToggle from "./components/ui/FloatingThemeToggle";
+import BackToTop from "./components/ui/BackToTopButton";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/*<GithubSpotlight />*/}
       <ContactCTA />
       <Footer />
+      <BackToTop />
     </>
   );
 }

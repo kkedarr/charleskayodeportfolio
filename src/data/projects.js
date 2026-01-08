@@ -5,9 +5,9 @@ const projects = [
     description:
       "Production-ready e-commerce platform featuring product catalog, cart logic, checkout workflows, admin dashboard, and secure payment integration.",
     stack: ["React", "JavaScript", "TailwindCSS", "REST APIs", "Payments"],
-    demo: null,
+    demo: "https://kedarwatches.vercel.app",
     github: null,
-    caseStudy: "/case-studies/kedar-watches",
+    caseStudy: null,
   },
   {
     title: "CryptoGlancer — Crypto Tracker",
@@ -17,7 +17,7 @@ const projects = [
     stack: ["React", "APIs", "Performance", "Charts"],
     demo: "https://crypto-glance-beryl.vercel.app/",
     github: "https://github.com/kkedarr/crypto-glancer",
-    caseStudy: "/case-studies/cryptoglancer",
+    caseStudy: null,
   },
   {
     title: "GFI Landing Page",
@@ -25,9 +25,9 @@ const projects = [
     description:
       "High-performance, SEO-optimized landing page built with React and TailwindCSS, focusing on speed, clarity, and conversion.",
     stack: ["React", "SEO", "TailwindCSS", "Performance"],
-    demo: "https://gfi.com",
+    demo: "https://www.glovest-gfi.com",
     github: null,
-    caseStudy: "/case-studies/gfi-landing",
+    caseStudy: null,
   },
   {
     title: "Author Portfolio Website",
@@ -36,8 +36,8 @@ const projects = [
       "Responsive author portfolio with newsletter automation, Mailchimp API integration, SEO optimization, and fast-loading pages.",
     stack: ["React", "TailwindCSS", "Mailchimp API", "SEO"],
     demo: "https://omak-charlie-books.vercel.app/",
-    github: "https://github.com/kkedarr/author-portfolio",
-    caseStudy: "/case-studies/author-portfolio",
+    github: "https://github.com/kkedarr/omak-charlie-books",
+    caseStudy: null,
   },
 ];
 

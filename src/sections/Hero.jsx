@@ -87,7 +87,7 @@ function Hero() {
             >
               <a
                 href="#projects"
-                className="button-primary inline-flex items-center justify-center gap-2"
+                className="button-primary inline-flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200"
               >
                 <SquareArrowOutUpRight size={18} />
                 View Projects
@@ -95,7 +95,7 @@ function Hero() {
 
               <a
                 href={ResumeFile}
-                className="button-secondary inline-flex items-center justify-center gap-2"
+                className="button-secondary inline-flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200"
               >
                 <FileText size={18} />
                 Download CV
@@ -105,7 +105,7 @@ function Hero() {
                 href="https://github.com/kkedarr"
                 target="_blank"
                 rel="noreferrer"
-                className="button-secondary inline-flex items-center justify-center gap-2"
+                className="button-secondary inline-flex items-center justify-center gap-2 hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200"
               >
                 <Github size={18} />
                 GitHub

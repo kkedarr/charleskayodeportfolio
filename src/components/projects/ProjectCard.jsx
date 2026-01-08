@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
           href={project.demo || "#"}
           target="_blank"
           rel="noreferrer"
-          className={`button-primary items-center flex gap-2 text-sm ${
+          className={`button-primary items-center flex gap-2 text-sm hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200 ${
             !project.demo ? disabledClass : ""
           }`}
         >
@@ -52,7 +52,7 @@ const ProjectCard = ({ project }) => {
           href={project.github || "#"}
           target="_blank"
           rel="noreferrer"
-          className={`button-secondary items-center flex gap-2 text-sm ${
+          className={`button-secondary items-center flex gap-2 text-sm hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200 ${
             !project.github ? disabledClass : ""
           }`}
         >
@@ -62,7 +62,7 @@ const ProjectCard = ({ project }) => {
 
         <a
           href={project.caseStudy || "#"}
-          className={`button-secondary items-center flex gap-2 text-sm ${
+          className={`button-secondary items-center flex gap-2 text-sm hover:scale-[1.03] active:scale-[0.98] transition-transform duration-200 ${
             !project.caseStudy ? disabledClass : ""
           }`}
         >

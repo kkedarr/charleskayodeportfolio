@@ -4,7 +4,7 @@ import Container from "../components/layout/Container";
 function ProofBar() {
   const items = [
     {
-      title: "1+ Years Experience",
+      title: "3+ Years Experience",
       description: "Professional frontend development",
     },
     {

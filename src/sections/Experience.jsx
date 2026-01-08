@@ -1,5 +1,6 @@
 import Section from "../components/layout/Section";
 import Container from "../components/layout/Container";
+import AnimatedDivider from "../components/ui/AnimatedDivider";
 
 function Experience() {
   return (
@@ -173,5 +174,7 @@ function TimelineItem({
     </div>
   );
 }
+
+
 
 export default Experience;

@@ -7,7 +7,7 @@ import { SiGithub } from "react-icons/si";
 
 function ContactCTA() {
   return (
-    <Section className="border-t border-border-light dark:border-border-dark">
+    <Section id="contact" className="border-t border-border-light dark:border-border-dark">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="section-title">

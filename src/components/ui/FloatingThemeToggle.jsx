@@ -9,7 +9,7 @@ function FloatingThemeToggle() {
       aria-label="Toggle theme"
       onClick={() => setIsDark(!isDark)}
       className="
-        fixed right-1 top-1/2 z-50 -translate-y-1/2
+        fixed right-1 bottom-1/4 z-50
         flex h-11 w-11 items-center justify-center
         rounded-sm border
         border-border-light dark:border-border-dark

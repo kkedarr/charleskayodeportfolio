@@ -12,7 +12,7 @@ const caseStudies = [
       "Implemented efficient state updates, memoized components, optimized API polling intervals, and component-level lazy loading to reduce unnecessary renders.",
     impact:
       "Improved render performance during live updates and delivered a smooth, responsive dashboard experience across devices.",
-    link: "/case-studies/cryptoglancer",
+    link: null,
   },
   {
     title: "Building a Scalable E-commerce Frontend System",
@@ -23,7 +23,7 @@ const caseStudies = [
       "Designed a modular React architecture with reusable components, REST API integration, and lazy-loaded routes for performance optimization.",
     impact:
       "Delivered a production-ready e-commerce platform with clean UX flows, strong performance, and scalability for future features.",
-    link: "/case-studies/kedar-watches",
+    link: null,
   },
 ];
 

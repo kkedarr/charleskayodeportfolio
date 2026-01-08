@@ -38,6 +38,16 @@ body {
    UI primitives
 -------------------------- */
 
+@keyframes divider {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.animate-divider {
+  animation: divider 0.8s ease-out forwards;
+}
+
+
 .card {
   @apply rounded-2xl border border-border-light bg-white p-6 shadow-sm;
 }

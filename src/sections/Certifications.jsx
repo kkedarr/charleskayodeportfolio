@@ -3,6 +3,7 @@ import Container from "../components/layout/Container";
 import certifications from "../data/certifications";
 import tools from "../data/tools";
 import { useState } from "react";
+import AnimatedDivider from "../components/ui/AnimatedDivider";
 
 const Certifications = () => {
   const [activeCert, setActiveCert] = useState(null);
@@ -180,5 +181,7 @@ const Certifications = () => {
     </Section>
   );
 };
+
+
 
 export default Certifications;
