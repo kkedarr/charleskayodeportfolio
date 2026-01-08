@@ -1,59 +1,82 @@
 import { BookOpen } from "lucide-react";
 
-function CaseStudyCard({ study }) {
+function CaseStudyCard({ study, onOpen }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark transition hover:shadow-md">
+    <div
+      className="
+        group
+        overflow-hidden rounded-2xl
+        border border-border-light dark:border-border-dark
+        bg-background-light dark:bg-background-dark
+        shadow-sm
+        transition-all duration-300
+        hover:-translate-y-1 hover:shadow-md
+      "
+    >
       {/* Image */}
-      <div className="overflow-hidden rounded-t-xl">
+      <div className="relative overflow-hidden">
         <img
           src={study.image}
           alt={study.title}
-          className="h-60 w-full object-cover"
           loading="lazy"
+          className="
+            aspect-[16/10] w-full object-cover
+            transition-transform duration-500
+            group-hover:scale-105
+          "
+        />
+
+        {/* Subtle overlay on hover */}
+        <div
+          className="
+            pointer-events-none absolute inset-0
+            bg-gradient-to-t from-black/20 via-transparent to-transparent
+            opacity-0 transition-opacity duration-300
+            group-hover:opacity-100
+          "
         />
       </div>
 
       {/* Content */}
-      <div className="p-5">
-        <h3 className="text-lg font-semibold">
+      <div
+        className="
+          flex flex-col gap-3
+          p-4 sm:p-5
+        "
+      >
+        {/* Title */}
+        <h3
+          className="
+            text-sm sm:text-base
+            font-semibold leading-snug
+            line-clamp-2
+          "
+        >
           {study.title}
         </h3>
 
-        <div className="mt-3 space-y-2 text-sm text-muted-light dark:text-muted-dark">
-          <p>
-            <span className="font-medium text-foreground-light dark:text-foreground-dark">
-              Problem:
-            </span>{" "}
-            {study.problem}
-          </p>
-
-          <p>
-            <span className="font-medium text-foreground-light dark:text-foreground-dark">
-              Architecture:
-            </span>{" "}
-            {study.architecture}
-          </p>
-
-          <p>
-            <span className="font-medium text-foreground-light dark:text-foreground-dark">
-              Impact:
-            </span>{" "}
-            {study.impact}
-          </p>
-        </div>
-
-        <div className="mt-5">
-          <a
-            href={study.link}
-            className="button-primary flex items-center gap-2 text-sm"
-          >
-            <BookOpen size={18} />
-            View Case Study
-          </a>
-        </div>
+        {/* CTA */}
+        <button
+          onClick={onOpen}
+          className="
+            inline-flex items-center justify-center gap-2
+            rounded-md border
+            border-border-light dark:border-border-dark
+            px-3 py-2 sm:px-4
+            text-xs sm:text-sm font-medium
+            transition-all duration-200
+            hover:bg-muted-light/40 dark:hover:bg-muted-dark/40
+            hover:scale-[1.02]
+            active:scale-[0.98]
+          "
+        >
+          <BookOpen className="h-4 w-4" />
+          View Case Study
+        </button>
       </div>
     </div>
   );
 }
 
 export default CaseStudyCard;
+

@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Section from "../components/layout/Section";
 import Container from "../components/layout/Container";
 import CaseStudyCard from "../components/casestudies/CaseStudyCard";
+import CaseStudyModal from "../components/casestudies/CaseStudyModal";
 import caseStudies from "../data/caseStudies";
 
 function CaseStudyPreviews() {
+  const [activeStudy, setActiveStudy] = useState(null);
+
   return (
     <Section>
       <Container>
@@ -26,9 +30,18 @@ function CaseStudyPreviews() {
             <CaseStudyCard
               key={study.title}
               study={study}
+              onOpen={() => setActiveStudy(study)}
             />
           ))}
         </div>
+
+        {/* Modal */}
+        {activeStudy && (
+          <CaseStudyModal
+            study={activeStudy}
+            onClose={() => setActiveStudy(null)}
+          />
+        )}
       </Container>
     </Section>
   );

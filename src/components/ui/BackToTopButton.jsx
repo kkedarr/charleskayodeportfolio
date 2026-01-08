@@ -22,7 +22,7 @@ const BackToTop = () => {
       onClick={scrollToTop}
       aria-label="Back to top"
       className={`
-        fixed right-1 bottom-20 z-50
+        fixed right-1 bottom-4 sm:bottom-6 md:bottom-20 z-50
         flex h-11 w-11 items-center justify-center rounded-full
         border border-border-light dark:border-border-dark
         bg-background-light dark:bg-background-dark
@@ -33,14 +33,16 @@ const BackToTop = () => {
         hover:text-primary
         focus:outline-none focus:ring-2 focus:ring-primary/40
 
-        ${visible 
-          ? "translate-y-0 opacity-100 pointer-events-auto" 
-          : "translate-y-6 opacity-0 pointer-events-none"}
+        ${
+          visible
+            ? "translate-y-0 opacity-100 pointer-events-auto"
+            : "translate-y-6 opacity-0 pointer-events-none"
+        }
       `}
     >
       <ArrowUp size={18} />
     </button>
   );
+};
 
-}
 export default BackToTop;

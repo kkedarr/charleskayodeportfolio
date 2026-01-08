@@ -7,7 +7,7 @@ function Experience() {
     <Section>
       <Container>
         <h2 className="section-title text-center">
-          Professional Experience
+          Recent Experience
         </h2>
 
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm sm:text-base text-muted-light dark:text-muted-dark">
@@ -32,36 +32,30 @@ function Experience() {
             role="Frontend Developer — Freelance"
             period="2025 — Present"
             company="GFI Website & Private Clients"
-            stack="React, TailwindCSS, SEO, Performance Optimization"
+            stack="React, Tailwind CSS, SEO, Performance Optimization"
             description="
-              Designed and shipped high-performance landing pages and business websites
-              with clean component architecture, mobile-first responsiveness, and
-              optimized asset delivery. Collaborated directly with stakeholders to
-              translate business requirements into polished user interfaces.
+              Designed, built, and delivered high-performance landing pages and business websites with a strong focus on component reusability, mobile-first responsiveness, and efficient asset loading. Worked closely with clients and stakeholders to translate business goals and requirements into clean, intuitive, and production-ready user interfaces.
             "
             impact="
-              Improved load times, SEO visibility, and conversion flow while maintaining
-              scalable and maintainable frontend codebases.
+              Improved page load performance, search visibility, and conversion clarity while maintaining scalable, maintainable frontend codebases suitable for long-term growth.
             "
           />
 
+
           <TimelineItem
             align="right"
-            role="Frontend Developer — E-Commerce Platform"
+            role="Frontend Developer — E-commerce Platform"
             period="2025"
             company="Kedar Watches"
             stack="React, REST APIs, Payment Integration, Admin Dashboards"
             description="
-              Built a production-ready e-commerce application featuring product catalog,
-              cart logic, secure checkout, authentication flows, and admin management
-              interfaces. Implemented reusable UI components and optimized rendering
-              performance using lazy loading and code splitting.
+              Developed and shipped a production-ready e-commerce application featuring a dynamic product catalog, persistent cart logic, secure checkout flows, authentication, and internal admin management interfaces. Implemented reusable component patterns and optimized rendering performance through lazy loading and code splitting.
             "
             impact="
-              Delivered a scalable storefront with smooth UX flows, improved runtime
-              performance, and operational tooling for inventory and order management.
+              Delivered a scalable storefront with smooth end-to-end user flows, improved runtime performance, and operational tooling that supports inventory and order management.
             "
           />
+
 
           <TimelineItem
             align="left"
@@ -70,16 +64,13 @@ function Experience() {
             company="JK Giants Innovations"
             stack="React, TypeScript, Paystack, REST APIs, Agile"
             description="
-              Worked within an Agile remote team building responsive web applications
-              and integrating authentication, wallet funding, and payment workflows.
-              Refactored legacy components, improved state management, and enhanced
-              UI feedback states across multiple modules.
+              Collaborated within a remote Agile team to build and maintain responsive web applications. Integrated authentication, wallet funding, and payment workflows using Paystack, while refactoring legacy components to improve state management, UI consistency, and user feedback across multiple modules.
             "
             impact="
-              Increased application reliability, reduced UI bugs, and improved perceived
-              performance through code optimization and better loading strategies.
+              Improved application reliability and user experience by reducing UI defects, optimizing component performance, and implementing clearer loading and error states.
             "
           />
+
 
           <TimelineItem
             align="right"
@@ -88,15 +79,13 @@ function Experience() {
             company="FlexiSAF Edusoft Limited"
             stack="React, Accessibility (WCAG), Performance Optimization"
             description="
-              Contributed to enterprise-grade applications focusing on accessibility,
-              component optimization, and collaborative code reviews. Built reusable UI
-              components and partnered with backend engineers on API integrations.
+              Contributed to enterprise-scale applications with a focus on accessibility, performance optimization, and collaborative development practices. Built reusable UI components, participated in code reviews, and worked closely with backend engineers on API integrations.
             "
             impact="
-              Improved accessibility compliance, reduced bundle size, and strengthened
-              overall code quality across shared repositories.
+              Improved accessibility compliance, reduced frontend bundle size, and strengthened overall code quality across shared repositories.
             "
           />
+
         </div>
       </Container>
     </Section>

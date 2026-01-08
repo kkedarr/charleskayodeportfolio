@@ -7,6 +7,8 @@ import AnimatedDivider from "../components/ui/AnimatedDivider";
 
 const Certifications = () => {
   const [activeCert, setActiveCert] = useState(null);
+  const [previewImage, setPreviewImage] = useState(null);
+
 
   return (
     <Section>
@@ -24,7 +26,7 @@ const Certifications = () => {
             Certifications
         ======================== */}
         <h3 className="mt-10 sm:mt-14 mb-4 sm:mb-6 text-center text-base sm:text-lg font-semibold">
-          Professional Certifications
+          Certifications
         </h3>
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 md:gap-6">
@@ -108,33 +110,79 @@ const Certifications = () => {
             Certificate Modal
         ======================== */}
         {activeCert && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
-            <div className="relative w-full max-w-5xl rounded-xl bg-background-light dark:bg-background-dark p-4 sm:p-6 shadow-lg">
-              {/* Close Button */}
-              <button
+        <div
+            onClick={() => setActiveCert(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-3 sm:px-4"
+        >
+            {/* Modal Card */}
+            <div
+            onClick={(e) => e.stopPropagation()}
+            className="
+                relative w-full max-w-5xl
+                max-h-[90vh] overflow-y-auto
+                rounded-2xl bg-background-light dark:bg-background-dark
+                p-4 sm:p-6 shadow-xl
+            "
+            >
+            {/* Close Button */}
+            <button
                 onClick={() => setActiveCert(null)}
-                className="absolute right-4 top-4 text-xs sm:text-sm font-medium text-muted-light hover:text-primary"
-              >
+                className="
+                absolute right-3 top-3 sm:right-4 sm:top-4
+                rounded-md px-2 py-1 text-xs sm:text-sm font-medium
+                text-muted-light dark:text-muted-dark
+                hover:text-primary transition
+                "
+            >
                 ✕ Close
-              </button>
+            </button>
 
-              <h4 className="mb-4 sm:mb-6 text-center text-base sm:text-lg font-semibold">
+            {/* Title */}
+            <h4 className="mb-4 sm:mb-6 text-center text-base sm:text-lg font-semibold">
                 {activeCert.name} — Certificates
-              </h4>
+            </h4>
 
-              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            {/* Images Grid */}
+            <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
                 {activeCert.images.map((img, index) => (
-                  <img
+                <button
                     key={index}
+                    onClick={() => setPreviewImage(img)}
+                    className="group overflow-hidden rounded-lg"
+                >
+                    <img
                     src={img}
                     alt={`Certificate ${index + 1}`}
-                    className="rounded-lg object-contain shadow-sm"
-                  />
+                    className="
+                        h-full w-full object-contain
+                        transition-transform duration-300
+                        group-hover:scale-105
+                    "
+                    />
+                </button>
                 ))}
-              </div>
             </div>
-          </div>
+            </div>
+        </div>
         )}
+
+        {/* =======================
+            Image Preview Modal
+        ======================== */}
+        {previewImage && (
+        <div
+            onClick={() => setPreviewImage(null)}
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 px-3"
+        >
+            <img
+            src={previewImage}
+            alt="Certificate Preview"
+            className="max-h-[90vh] max-w-full rounded-lg shadow-xl"
+            />
+        </div>
+        )}
+
+
 
         {/* =======================
             Tools & Platforms
