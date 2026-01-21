@@ -11,15 +11,24 @@ const projects = [
   },
 
   {
-    title: "GFI Landing Page",
-    category: "Startup / Fintech",
+    title: "CryptoGlancr",
+    category: "Web App / Crypto Analytics",
     description:
-      "High-performance, SEO-optimized landing page built with a mobile-first approach, focusing on fast load times, clear messaging, and conversion-oriented user flows.",
-    stack: ["React", "Tailwind CSS", "SEO", "Performance Optimization"],
-    demo: "https://www.glovest-gfi.com",
-    github: null,
+      "A modern crypto market intelligence platform featuring real-time price tracking, interactive charts, live news aggregation, and responsive UI. Built for traders, researchers, and crypto enthusiasts who need fast, accurate market insights.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Chart.js",
+      "CoinGecko API",
+      "Crypto News API",
+      "Framer Motion",
+      "Performance Optimization",
+    ],
+    demo: "https://cryptoglancrlanding.vercel.app/",
+    github: "https://github.com/kkedarr/CryptoGlancr-landingpage",
     caseStudy: null,
   },
+
 
   {
     title: "Author Portfolio Website",
