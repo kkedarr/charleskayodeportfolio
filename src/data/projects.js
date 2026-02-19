@@ -7,7 +7,7 @@ const projects = [
     stack: ["React", "JavaScript", "Tailwind CSS", "REST APIs", "Payments"],
     demo: "https://kedarwatches.vercel.app",
     github: null,
-    caseStudy: null,
+    caseStudy: "#case-studies",
   },
 
   {
@@ -29,6 +29,24 @@ const projects = [
     caseStudy: null,
   },
 
+  {
+    title: "TradeHaven — Crypto Alpha Platform",
+    category: "Web App / Fintech / Crypto",
+    description:
+      "A crypto alpha platform where trader visibility is earned through provable performance. Each trade call is tracked against real outcomes, feeding a dynamic credibility score that compounds or decays over time.",
+    stack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Real-time Data",
+      "Reputation Systems",
+      "Performance Tracking"
+    ],
+    demo: "https://tradehaven.vercel.app/",
+    github: null,
+    caseStudy: "#case-studies",
+  },
+
+
 
   {
     title: "Author Portfolio Website",
@@ -49,9 +67,8 @@ const projects = [
     stack: ["React", "Tailwind CSS", "Responsive Design", "SEO", "Accessibility"],
     demo: "https://richerpalace.vercel.app/",
     github: null,
-    caseStudy: null,
+    caseStudy: "#case-studies",
   },
-
 
 ];
 

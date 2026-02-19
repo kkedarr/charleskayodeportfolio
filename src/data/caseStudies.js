@@ -1,5 +1,6 @@
 import RicherPalaceCaseStudy from "../assets/richerpalacecasestudy.png"
 import KedarWatchesCaseStudy from "../assets/kedarwatchescasestudy.png"
+import TradeHavenCaseStudy from "../assets/tradehavencasestudyimage.png"
 
 
 const caseStudies = [
@@ -15,6 +16,23 @@ const caseStudies = [
       "The completed platform delivers a production-ready e-commerce system that supports the full commercial lifecycle—from product discovery and detailed viewing to cart management and checkout—while empowering the business to manage its inventory independently. Operational overhead is reduced by eliminating manual code changes for product updates, and the site maintains strong performance and usability across devices. The architecture provides a solid foundation for future expansion, including payment processing, order management, analytics, and additional customer-facing features as the Kedar Watches brand continues to grow.",
     link: null,
   },
+
+  {
+    title: "TradeHaven – Crypto Alpha Platform",
+    image: TradeHavenCaseStudy,
+
+    problem:
+      "Crypto trading communities are saturated with unverified signals, anonymous opinions, and low-accountability participation. Traders can make bold claims without consequences, leading to noise, misinformation, and reduced trust. There was a need for a system where visibility is earned through accuracy, and credibility is tied directly to measurable performance.",
+
+    architecture:
+      "TradeHaven was designed as a frontend-heavy web application focused on structuring trading data, tracking outcomes, and reflecting performance through a dynamic reputation layer. Users submit trade calls defined by entry price, target, and time window. Each call is evaluated against real market conditions to determine success or failure.\n\nA core system tracks trader performance over time and computes a credibility score that evolves based on outcomes. This score directly influences visibility, ensuring that consistently accurate traders gain prominence while poor performers lose reach. The UI is structured to surface high-signal content first, reducing noise and improving decision-making for users.\n\nThe platform architecture emphasizes modular state management for trade tracking, user scoring, and feed ranking. Reusable components were built for trade cards, performance indicators, and reputation badges. The system is designed to integrate with Web3-based identity or reputation layers such as Ethos, allowing credibility to extend beyond the platform.\n\nAdditional mechanisms such as reputation-weighted endorsements and gated posting permissions were considered to further strengthen content quality and prevent spam. These features transform the platform from a simple feed into a credibility-driven network.",
+
+    impact:
+      "TradeHaven introduces accountability into crypto signal sharing by tying visibility to verified performance. This shifts the platform from opinion-driven noise to data-backed credibility, encouraging higher-quality participation. Traders are incentivized to be accurate rather than loud, resulting in a more trustworthy and efficient discovery environment.\n\nThe system demonstrates how reputation can function as both a ranking mechanism and an access control layer, a concept that can extend to broader Web3 and financial applications. By aligning incentives with performance, TradeHaven creates a foundation for scalable, trust-driven communities.",
+
+    link: null,
+  },
+
 
 
   {

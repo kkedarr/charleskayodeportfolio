@@ -9,7 +9,7 @@ function CaseStudyPreviews() {
   const [activeStudy, setActiveStudy] = useState(null);
 
   return (
-    <Section>
+    <Section id="case-studies">
       <Container>
         {/* Header */}
         <div className="mb-6 sm:mb-10 text-center">
