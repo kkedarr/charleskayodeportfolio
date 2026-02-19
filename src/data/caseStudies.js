@@ -18,7 +18,7 @@ const caseStudies = [
   },
 
   {
-    title: "TradeHaven – Crypto Alpha Platform",
+    title: "TradeHaven – Reputation-Based Crypto Alpha Platform",
     image: TradeHavenCaseStudy,
 
     problem:
